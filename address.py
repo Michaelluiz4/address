@@ -1,5 +1,5 @@
 import brazilcep
-from brazilcep.exceptions import CEPNotFound
+from brazilcep.exceptions import CEPNotFound, InvalidCEP
 
 def address():
     # function to receive postal code.
@@ -8,7 +8,9 @@ def address():
         data = brazilcep.get_address_from_cep(zip_code)
         print(data)
     except CEPNotFound:
-        print(f"Cep invalido")
+        print(f"Cep não encontrado")
+    except InvalidCEP:
+        print("Cep inválido.")
 
 
 address()
