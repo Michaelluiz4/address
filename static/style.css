@@ -1,12 +1,12 @@
 body {
-  margin: 0; /* Remove margens padrão */
-  padding: 0; /* Remove preenchimentos padrão */
-  box-sizing: border-box; /* Inclui bordas e preenchimentos no cálculo do tamanho */
-  font-family: Arial, sans-serif; /* Define uma fonte padrão */
-  font-size: 100%; /* Define o tamanho padrão da fonte */
-  line-height: 1.5; /* Define o espaçamento entre linhas */
-  background-color: #f4f4f4; /* Define uma cor de fundo suave */
-  color: #333; /* Define a cor padrão do texto */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
 h1 {
@@ -14,8 +14,16 @@ h1 {
     margin-top: 5%;
 }
 
-form {
+p {
     text-align: center;
-    margin: 10%;
+    margin-top: 3%;
 }
 
+form {
+    text-align: center;
+    margin: 2%;
+}
+
+input {
+    margin: 0.7%;
+}
