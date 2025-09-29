@@ -7,10 +7,16 @@
     <title>Data address</title>
 </head>
 <body>
-    <h3>CEP: {{ zip_code }}</h3>
-    <h3>{{ street }}</h3>
-    <h3>Cidade: {{ city }}</h3>
-    <h3>UF: {{ uf }}</h3>
-    <h3>Bairro: {{ neighborhood }}</h3>    
+    {% if street %}
+        <h3>CEP: {{ zip_code }}</h3>
+        <h3>{{ street }}</h3>
+        <h3>Cidade: {{ city }}</h3>
+        <h3>UF: {{ uf }}</h3>
+        <h3>Bairro: {{ neighborhood }}</h3>
+    {% elif erro %}
+        <div class="error">
+            <h3>{{ erro }}</h3>
+        </div>
+    {% endif %}    
 </body>
 </html>
