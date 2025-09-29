@@ -13,10 +13,10 @@
     <p>Informe um CEP e clique em Pesquisar CEP, para saber detalhes da localização</p>
 
     <div class="content">
-        <form>
+        <form action="/address" method="POST">
             <label>Cep: </label>
-            <input type="text" id="address" name="address"><br>
-            <input type="button" value="Pesquisar CEP">
+            <input type="text" id="address" name="address" placeholder="Digite o CEP"><br>
+            <button type="submit">Pesquisar CEP</button>
         </form>        
     </div>
 </body>
