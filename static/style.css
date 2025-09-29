@@ -9,9 +9,14 @@ body {
   color: #333;
 }
 
-h1 {
+h1{
     text-align: center;
     margin-top: 5%;
+}
+
+h3 {
+    text-align: center;
+    margin: 1%;
 }
 
 p {
