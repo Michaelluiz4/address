@@ -22,10 +22,9 @@ def address():
         neighborhood = data["district"]     
         return render_template("address.html", zip_code=zip_code, street=street, city=city, uf=uf, neighborhood=neighborhood)
     except CEPNotFound:
-        return "Cep não encontrado" # caso do cep passado em zip_code não ser encontrado
+        return render_template("address.html", erro="Cep não encontrado")
     except InvalidCEP:
-        return "Cep inválido." # caso do cep passado em zip_code ser inváliodo.
-
+        return render_template("address.html", erro="Cep inválido.")
 
 
 if __name__ == "__main__":
